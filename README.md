@@ -15,15 +15,15 @@ If you love developing with [Bedrock](https://roots.io/bedrock/) and [Laravel Va
   	$ composer create-project roots/bedrock bedrock-app
 	```
 3. Configure Bedrock as needed. **Pay attention to your local & remote paths**.
-4. Clone or [download](https://github.com/lopadz/wp-sync/archive/refs/heads/main.zip) to a directory inside your app. *(ex. bedrock-app/wp-sync/sync.mk)*
+4. Clone or [download](https://github.com/lopadz/wp-sync/archive/refs/heads/main.zip) this repo to a directory inside your app. *(ex. bedrock-app/wp-sync/sync.mk)*
 	```sh
 	$ git clone https://github.com/lopadz/wp-sync
 	```
 5. Configure the `sync.mk` & `srdb.mk` files to match your project needs.
 6. When you're ready to sync to remote, `cd` to your project's directory and run:
-   ```sh
-  	$ make -f wp-sync/sync.mk
-  	```
+	```sh
+	$ make -f wp-sync/sync.mk
+	```
 7. Double-check the paths and press <kbd>y</kbd> to run the makefile. Press any other key to exit.
 8. If everything worked, it will open a new connection to the remote host and `cd` you into the project's directory.
 
