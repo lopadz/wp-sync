@@ -1,0 +1,5 @@
+# Mark the files/dir to exclude from syncing to remote server
+*.DS_Store
+*.bak
+*.log
+.vscode/
