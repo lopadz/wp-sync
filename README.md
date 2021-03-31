@@ -15,7 +15,7 @@ If you love developing with [Bedrock](https://roots.io/bedrock/) and [Laravel Va
   	$ composer create-project roots/bedrock bedrock-app
 	```
 3. Configure Bedrock as needed. **Pay attention to your local & remote paths**.
-4. Clone or [download](https://github.com/lopadz/wp-sync/archive/refs/heads/master.zip) to a directory inside your app. *(ex. bedrock-app/wp-sync/sync.mk)*
+4. Clone or [download](https://github.com/lopadz/wp-sync/archive/refs/heads/main.zip) to a directory inside your app. *(ex. bedrock-app/wp-sync/sync.mk)*
 	```sh
 	$ git clone https://github.com/lopadz/wp-sync
 	```
