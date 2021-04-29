@@ -100,7 +100,7 @@ dump_db:
 	@echo "${LIGHTPURPLE}${SEPARATOR}${RESET_COLOR}"
 	@echo "  ${LIGHTPURPLE}Exporting LOCAL DB ...${RESET_COLOR}"
 	@echo "${LIGHTPURPLE}${SEPARATOR}${RESET_COLOR}"
-	@if [ ! -d ${LOCAL_APP_PATH}/${SYNC_DB_PATH} ]; then mkdir -p ${LOCAL_APP_PATH}/${SYNC_DB_PATH}; fi
+	@if [ ! -d "${LOCAL_APP_PATH}/${SYNC_DB_PATH}" ]; then mkdir -p "${LOCAL_APP_PATH}/${SYNC_DB_PATH}"; fi
 	@wp --path="${WP_CORE_PATH}" db repair --quiet && wp --path="${WP_CORE_PATH}" db optimize --quiet
 	@wp --path="${WP_CORE_PATH}" db export "${DB_EXPORT}"
 
