@@ -7,8 +7,11 @@ MAKEFILE_PATH := $(realpath $(shell dirname $(MAKEFILE_LIST)))
 # Get name of this Makefile
 MAKE_FILENAME := $(lastword $(MAKEFILE_LIST))
 
+# Get Utilities
+UTILITIES_FILE = $(shell echo "${MAKEFILE_PATH}/utilities.mk" | sed 's/ /\\ /g')
+
 # Include utilities like colors
-include ${MAKEFILE_PATH}/utilities.mk
+include ${UTILITIES_FILE}
 
 # ==============
 #   EDIT THIS
