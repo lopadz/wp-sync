@@ -2,7 +2,7 @@
 SHELL := bash
 
 # Get path of this Makefile
-MAKEFILE_PATH :=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
+MAKEFILE_PATH := $(realpath $(shell dirname $(MAKEFILE_LIST)))
 
 # Get name of this Makefile
 MAKE_FILENAME := $(lastword $(MAKEFILE_LIST))
