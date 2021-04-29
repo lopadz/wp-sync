@@ -56,8 +56,8 @@ If you love developing with [Bedrock](https://roots.io/bedrock/) and [Laravel Va
 	```sh
 	$ make -f bedrock-app/wp-sync/sync.mk
 	```
-- The recipe exports the database to: `db/dev-DATABASE_NAME-YYYY-MM-DD-HHMMSS.sql`. To change the path or filename, update lines 30, 52, 53.
-- If you would like to completely mirror both local and remote directories, you could pass a --delete flag in lines 90 & 111. **Be very careful with this flag. If paths are configured incorrectly, this could delete files not meant to be deleted.**
+- The recipe exports the database to: `db/dev-DATABASE_NAME-YYYY-MM-DD-HHMMSS.sql`. To change the path or filename, update lines 33, 55, 56.
+- If you would like to completely mirror both local and remote directories, you could pass a --delete flag in lines 93 & 114. **Be very careful with this flag. If paths are configured incorrectly, this could delete files not meant to be deleted.**
 
 If you only need to run a specific step in the `sync.mk` script, run:
   ```sh
